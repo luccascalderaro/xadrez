@@ -35,6 +35,10 @@ public Peca peca (Posicao pos) {
 	return pecas [pos.getLinha()][pos.getColuna()];
 }
 
-
+public void colocarPeca (Peca pec, Posicao pos) {
+	pecas[pos.getLinha()][pos.getColuna()] = pec;
+	pec.pos = pos;
+	
+}
 
 }
